@@ -1,13 +1,15 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/home";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/my-site-onex">
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* редирект с корня на Home */}
+        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
   );
