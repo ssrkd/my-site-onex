@@ -11,7 +11,7 @@ import "../css/sign-up.css";
 
 // картинки
 import qaraaLogo from "../images/qaraa.png";
-import exampleImg from "../images/example.jpg";
+import exampleImg from "../images/qaraa.png";
 import rectangleImg from "../images/rectangle.svg";
 
 function Home() {
@@ -119,7 +119,7 @@ function Home() {
               </a>
             </div>
             <div className="new-text-one" style={{ color: "black" }}>
-              Sample Text
+              test test
             </div>
           </div>
 
@@ -146,8 +146,8 @@ function Home() {
               <a className="product-box" href="#">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={exampleImg} alt="product" className="product-img" />
-                <div className="product-title">Sample Product</div>
-                <div className="product-price">1999 р.</div>
+                <div className="product-title">На разработке сорри</div>
+                <div className="product-price">1999 тг.</div>
               </a>
             </div>
           </div>
