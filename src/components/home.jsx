@@ -188,7 +188,7 @@ function Home() {
           <ul className="socials">
             <li>
               <a
-                href="https://www.instagram.com/thatisfranchise/"
+                href="https://www.instagram.com/qaraa.kz/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -200,7 +200,7 @@ function Home() {
             </li>
             <li>
               <a
-                href="https://vk.com/thatisfranchise"
+                href="https://www.tiktok.com/@qaraa.kz"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -209,7 +209,7 @@ function Home() {
             </li>
             <li>
               <a
-                href="https://t.me/thatisfranchise"
+                href="https://t.me/qaraa_kz"
                 target="_blank"
                 rel="noreferrer"
               >
