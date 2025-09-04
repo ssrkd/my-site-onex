@@ -206,36 +206,36 @@ function Home() {
         <section className="shop-container" ref={shopRef}>
           <div className="section-title">
             <div className="shop-content">
-            <a className="product-box" href="#">
+              <Link className="product-box" to="/product/futbolkaami">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={futbolkaami} alt="product" className="product-img" />
-                <div className="product-title">На разработке сорри</div>
+                <div className="product-title">Футболка Ami</div>
                 <div className="product-price">1999 тг.</div>
-              </a>
-              <a className="product-box" href="#">
+              </Link>
+              <Link className="product-box" to="/product/bazafutbolka">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={bazafutbolka} alt="product" className="product-img" />
-                <div className="product-title">На разработке сорри</div>
+                <div className="product-title">База футболка</div>
                 <div className="product-price">1999 тг.</div>
-              </a>
-              <a className="product-box" href="#">
+              </Link>
+              <Link className="product-box" to="/product/nikeforce">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={nikeforce} alt="product" className="product-img" />
-                <div className="product-title">На разработке сорри</div>
+                <div className="product-title">Nike Air Force</div>
                 <div className="product-price">1999 тг.</div>
-              </a>
-              <a className="product-box" href="#">
+              </Link>
+              <Link className="product-box" to="/product/nikeairjordan">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={nikeairjordan} alt="product" className="product-img" />
-                <div className="product-title">На разработке сорри</div>
+                <div className="product-title">Nike Air Jordan</div>
                 <div className="product-price">1999 тг.</div>
-              </a>
-              <a className="product-box" href="#">
+              </Link>
+              <Link className="product-box" to="/product/diorbraclet">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={diorbraclet} alt="product" className="product-img" />
-                <div className="product-title">На разработке сорри</div>
+                <div className="product-title">Dior Браслет</div>
                 <div className="product-price">1999 тг.</div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
