@@ -14,7 +14,7 @@
   /* Для телефонов */
   @media (max-width: 768px) {
     .product-card-back {
-      left: -50px;
+      left: -35px;
     }
   }
   
