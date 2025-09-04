@@ -12,6 +12,18 @@ import "../css/sign-up.css";
 // картинки
 import qaraaLogo from "../images/qaraa.png";
 import exampleImg from "../images/qaraa.png";
+import youdiorbracletw from "../images/youdiorbracletw.png";
+import youdiorbracletm from "../images/youdiorbracletm.png";
+import youamifutbolkaw from "../images/youamifutbolkaw.png";
+import youamifutbolkam from "../images/youamifutbolkam.png";
+import youpoloswiterw from "../images/youpoloswiterw.png";
+import youpoloswiterm from "../images/youpoloswiterm.png";
+import yousvtrikow from "../images/yousvtrikow.png";
+import yousvtrikom from "../images/yousvtrikom.png";
+import youairforcew from "../images/youairforcew.png";
+import youairforcem from "../images/youairforcem.png";
+import youairjordanw from "../images/youairjordanw.png";
+import youairjordanm from "../images/youairjordanm.png";
 import rectangleImg from "../images/rectangle.svg";
 import bazafutbolka from "../images/bazafutbolka.png";
 import nikeforce from "../images/nikeairforce.png";
@@ -254,7 +266,40 @@ function Home() {
               <h1>YOU</h1>
             </div>
             <div className="gallery-img">
-              <img src={exampleImg} alt="gallery" />
+              <img src={youpoloswiterm} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youpoloswiterw} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youamifutbolkam} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youamifutbolkaw} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={yousvtrikom} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={yousvtrikow} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youairjordanw} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youairjordanm} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youairforcew} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youairforcem} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youdiorbracletm} alt="gallery" />
+            </div>
+            <div className="gallery-img">
+              <img src={youdiorbracletw} alt="gallery" />
             </div>
           </div>
           <div className="popup-img">

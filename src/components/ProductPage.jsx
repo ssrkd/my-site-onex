@@ -1,6 +1,7 @@
 // src/components/ProductPage.jsx
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "../css/ProductCard.css";
 
 // картинки (подставь свои пути!)
 import futbolkaami from "../images/futbolkaami.png";
@@ -96,32 +97,31 @@ function ProductPage() {
         <div className="product-card-left-section" style={{ flex: 1 }}>
           {/* Заголовок + стрелка */}
           <div
-  className="product-card-header"
-  style={{
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between", // стрелка слева, название по центру
-    marginBottom: "1rem",
-    position: "relative",
-  }}
->
-<button
-  onClick={() => navigate(-1)}
-  className="product-card-back"
-  style={{
-    position: "absolute",
-    left: -50,              // прижата к самому краю
-    top: "50%",
-    transform: "translateY(-50%)",
-    display: "flex",
-    alignItems: "center",
-    gap: "6px",
-    background: "none",
-    border: "none",
-    cursor: "pointer",
-    padding: 0,
-  }}
->
+            className="product-card-header"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              marginBottom: "1rem",
+              position: "relative",
+            }}
+          >
+            <button
+              onClick={() => navigate(-1)}
+              className="product-card-back"
+              style={{
+                position: "absolute",
+                top: "50%",
+                transform: "translateY(-50%)",
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                padding: 0,
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -245,21 +245,6 @@ function ProductPage() {
           </button>
         </div>
       </div>
-
-      {/* Мини адаптив */}
-      <style>{`
-        @media (max-width: 768px) {
-          .back-text {
-            display: none;
-          }
-          .product-card-header {
-            gap: 6px;
-          }
-          .product-card-title {
-            font-size: 1.2rem !important;
-          }
-        }
-      `}</style>
     </section>
   );
 }
