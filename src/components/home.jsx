@@ -31,6 +31,7 @@ import svtriko from "../images/svtriko.png";
 import nikeairjordan from "../images/nikeairjordan.png";
 import futbolkaami from "../images/futbolkaami.png";
 import diorbraclet from "../images/diorbraclet.png";
+import poloswiter from "../images/poloswiter.png";
 
 function Home() {
   const footerRef = useRef(null);
@@ -219,6 +220,12 @@ function Home() {
         <section className="shop-container" ref={shopRef}>
           <div className="section-title">
             <div className="shop-content">
+              <Link className="product-box" to="/product/poloswiter">
+                <img src={rectangleImg} alt="" className="rectangle" />
+                <img src={poloswiter} alt="product" className="product-img" />
+                <div className="product-title">Polo Свитер</div>
+                <div className="product-price">1999 тг.</div>
+              </Link>
               <Link className="product-box" to="/product/futbolkaami">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={futbolkaami} alt="product" className="product-img" />

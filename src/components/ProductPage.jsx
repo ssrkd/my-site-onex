@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import "../css/ProductCard.css";
 
 // картинки (подставь свои пути!)
+import poloswiter from "../images/poloswiter.png";
 import futbolkaami from "../images/futbolkaami.png";
 import bazafutbolka from "../images/bazafutbolka.png";
 import svtriko from "../images/svtriko.png";
@@ -17,6 +18,15 @@ import nikeairjordan3 from "../images/nikeairjordan3.png";
 import diorbraclet from "../images/diorbraclet.png";
 
 const products = {
+  poloswiter: {
+    id: "poloswiter",
+    name: "Polo Свитер",
+    price_new: "1999",
+    price_old: "2999",
+    description: "Удобная футболка из хлопка. Отлично подходит для повседневной носки.",
+    images: [poloswiter],
+    sizes: ["S", "M", "L", "XL"],
+  },
   futbolkaami: {
     id: "futbolkaami",
     name: "Футболка Ami",
