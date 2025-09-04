@@ -15,6 +15,7 @@ import exampleImg from "../images/qaraa.png";
 import rectangleImg from "../images/rectangle.svg";
 import bazafutbolka from "../images/bazafutbolka.png";
 import nikeforce from "../images/nikeairforce.png";
+import svtriko from "../images/svtriko.png";
 import nikeairjordan from "../images/nikeairjordan.png";
 import futbolkaami from "../images/futbolkaami.png";
 import diorbraclet from "../images/diorbraclet.png";
@@ -216,6 +217,12 @@ function Home() {
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={bazafutbolka} alt="product" className="product-img" />
                 <div className="product-title">База футболка</div>
+                <div className="product-price">1999 тг.</div>
+              </Link>
+              <Link className="product-box" to="/product/svtriko">
+                <img src={rectangleImg} alt="" className="rectangle" />
+                <img src={svtriko} alt="product" className="product-img" />
+                <div className="product-title">SV</div>
                 <div className="product-price">1999 тг.</div>
               </Link>
               <Link className="product-box" to="/product/nikeforce">
