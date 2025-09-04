@@ -161,11 +161,23 @@ const Dostavka = () => {
                 color: "#666",
                 lineHeight: "1.8"
               }}>
-                <li style={{ marginBottom: "0.5rem" }}>💳 Kaspi</li>
-                <li style={{ marginBottom: "0.5rem" }}>💳 Halyk</li>
-                <li style={{ marginBottom: "0.5rem" }}>💳 Freedom</li>
-                <li style={{ marginBottom: "0.5rem" }}>💵 Наличными при получении</li>
-              </ul>
+                <li style={{ marginBottom: "0.5rem" }}>
+    <img src={require("../images/kaspi.png")} alt="Kaspi" style={{ width: "20px", marginRight: "8px" }} />
+    Kaspi
+  </li>
+  <li style={{ marginBottom: "0.5rem" }}>
+    <img src={require("../images/halyk.png")} alt="Halyk" style={{ width: "20px", marginRight: "8px" }} />
+    Halyk
+  </li>
+  <li style={{ marginBottom: "0.5rem" }}>
+    <img src={require("../images/freedom.png")} alt="Freedom" style={{ width: "20px", marginRight: "8px" }} />
+    Freedom
+  </li>
+  <li style={{ marginBottom: "0.5rem" }}>
+    <img src={require("../images/cash.png")} alt="Cash" style={{ width: "20px", marginRight: "8px" }} />
+    Наличными при получении
+  </li>
+</ul>
             </div>
 
             {/* Location Card */}
