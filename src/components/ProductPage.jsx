@@ -94,39 +94,56 @@ function ProductPage() {
       <div className="product-card-preview" style={{ display: "flex", gap: "2rem" }}>
         {/* Левая часть */}
         <div className="product-card-left-section" style={{ flex: 1 }}>
-          {/* Кнопка назад */}
-          <button
-            onClick={() => navigate(-1)}
-            className="product-card-back"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "6px",
-              marginBottom: "1rem",
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-            }}
-          >
-            {/* SVG стрелка */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="icon"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-            <span className="back-text">Назад</span>
-          </button>
+          {/* Заголовок + стрелка */}
+          <div
+  className="product-card-header"
+  style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between", // стрелка слева, название по центру
+    marginBottom: "1rem",
+    position: "relative",
+  }}
+>
+<button
+  onClick={() => navigate(-1)}
+  className="product-card-back"
+  style={{
+    position: "absolute",
+    left: -50,              // прижата к самому краю
+    top: "50%",
+    transform: "translateY(-50%)",
+    display: "flex",
+    alignItems: "center",
+    gap: "6px",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    padding: 0,
+  }}
+>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="icon"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+              <span className="back-text">Назад</span>
+            </button>
 
-          <div className="product-card-title" style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "1rem" }}>
-            {product.name}
+            <div
+              className="product-card-title"
+              style={{ fontSize: "1.5rem", fontWeight: "bold" }}
+            >
+              {product.name}
+            </div>
           </div>
 
           <div className="product-imgs">
@@ -229,11 +246,17 @@ function ProductPage() {
         </div>
       </div>
 
-      {/* Мини адаптив (можно вынести в CSS) */}
+      {/* Мини адаптив */}
       <style>{`
         @media (max-width: 768px) {
           .back-text {
             display: none;
+          }
+          .product-card-header {
+            gap: 6px;
+          }
+          .product-card-title {
+            font-size: 1.2rem !important;
           }
         }
       `}</style>
