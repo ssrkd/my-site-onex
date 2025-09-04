@@ -197,6 +197,18 @@ function Home() {
               </a>
             </li>
             <li>
+  <a
+    href="https://wa.me/7778307588"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <i
+      className="bx bxl-whatsapp bx-tada"
+      id="social-network-icon"
+    ></i>
+  </a>
+</li>
+            <li>
               <a
                 href="https://www.tiktok.com/@qaraa.kz"
                 target="_blank"
@@ -222,7 +234,7 @@ function Home() {
         <div className="footer-bottom">
           <p>Copyright &copy;2025 qaraa kz.</p>
           <p>
-            Created by <span>secret</span>.
+            Created by <span>srk</span>.
           </p>
         </div>
       </footer>
