@@ -1,5 +1,5 @@
 // src/components/home.jsx
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 // стили
@@ -15,6 +15,28 @@ import exampleImg from "../images/qaraa.png";
 import rectangleImg from "../images/rectangle.svg";
 
 function Home() {
+  const footerRef = useRef(null);
+  const galleryRef = useRef(null);
+  const shopRef = useRef(null);
+
+  const scrollToFooter = () => {
+    if (footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToGallery = () => {
+    if (galleryRef.current) {
+      galleryRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToShop = () => {
+    if (shopRef.current) {
+      shopRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="container">
       {/* =============== HEADER =============== */}
@@ -31,19 +53,58 @@ function Home() {
           <nav>
             <ul className="ul" id="ul">
               <li>
-                <Link className="shop" to="/shop">
+                <button
+                  className="nav-button"
+                  onClick={scrollToShop}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                    color: "#333",
+                    padding: 0,
+                    fontFamily: "inherit",
+                  }}
+                >
                   SHOP
-                </Link>
+                </button>
               </li>
               <li>
-                <Link className="gallery" to="/gallery">
+                <button
+                  className="nav-button"
+                  onClick={scrollToGallery}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                    color: "#333",
+                    padding: 0,
+                    fontFamily: "inherit",
+                  }}
+                >
                   GALLERY
-                </Link>
+                </button>
               </li>
               <li>
-                <Link className="contacts" to="/contacts">
+                <button
+                  className="nav-button"
+                  onClick={scrollToFooter}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                    color: "#333",
+                    padding: 0,
+                    fontFamily: "inherit",
+                  }}
+                >
                   CONTACTS
-                </Link>
+                </button>
               </li>
             </ul>
           </nav>
@@ -113,7 +174,6 @@ function Home() {
 
           <div className="new">
             <div className="new-grid">
-              {/* Здесь будет fetch new_drop из API */}
               <a href="#">
                 <img src={exampleImg} alt="sakura-img" className="new-img" />
               </a>
@@ -139,10 +199,9 @@ function Home() {
         </section>
 
         {/* Shop */}
-        <section className="shop-container">
+        <section className="shop-container" ref={shopRef}>
           <div className="section-title">
             <div className="shop-content">
-              {/* Здесь будет fetch products из API */}
               <a className="product-box" href="#">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={exampleImg} alt="product" className="product-img" />
@@ -154,12 +213,11 @@ function Home() {
         </section>
 
         {/* Gallery */}
-        <section>
+        <section ref={galleryRef}>
           <div className="gallery-container">
             <div className="gallery-you">
               <h1>YOU</h1>
             </div>
-            {/* Здесь будет fetch gallery из API */}
             <div className="gallery-img">
               <img src={exampleImg} alt="gallery" />
             </div>
@@ -171,11 +229,11 @@ function Home() {
       </main>
 
       {/* =============== FOOTER =============== */}
-      <footer className="footer">
+      <footer className="footer" ref={footerRef}>
         <div className="footer-content">
           <h3 className="logo-text">qaraa kz</h3>
           <div className="addition">
-          <Link to="/dostavka">Доставка</Link>
+            <Link to="/dostavka">Доставка</Link>
             <a href="/vozvrat" target="_blank" rel="noreferrer">
               Условия возврата товара
             </a>
@@ -197,17 +255,13 @@ function Home() {
               </a>
             </li>
             <li>
-  <a
-    href="https://wa.me/7778307588"
-    target="_blank"
-    rel="noreferrer"
-  >
-    <i
-      className="bx bxl-whatsapp bx-tada"
-      id="social-network-icon"
-    ></i>
-  </a>
-</li>
+              <a href="https://wa.me/7778307588" target="_blank" rel="noreferrer">
+                <i
+                  className="bx bxl-whatsapp bx-tada"
+                  id="social-network-icon"
+                ></i>
+              </a>
+            </li>
             <li>
               <a
                 href="https://www.tiktok.com/@qaraa.kz"
