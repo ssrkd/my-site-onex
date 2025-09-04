@@ -22,7 +22,7 @@ const products = {
     price_new: "1999",
     price_old: "2999",
     description: "Удобная футболка из хлопка. Отлично подходит для повседневной носки.",
-    images: [futbolkaami, bazafutbolka],
+    images: [futbolkaami],
     sizes: ["S", "M", "L", "XL"],
   },
   bazafutbolka: {
@@ -49,7 +49,7 @@ const products = {
     price_new: "1999",
     price_old: "2499",
     description: "Легендарные кроссовки Nike Air Force.",
-    images: [nikeforce,nikeforce2,nikeforce3],
+    images: [nikeforce, nikeforce2, nikeforce3],
     sizes: ["40", "41", "42", "43"],
   },
   nikeairjordan: {
@@ -94,18 +94,36 @@ function ProductPage() {
       <div className="product-card-preview" style={{ display: "flex", gap: "2rem" }}>
         {/* Левая часть */}
         <div className="product-card-left-section" style={{ flex: 1 }}>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              navigate(-1);
-            }}
+          {/* Кнопка назад */}
+          <button
+            onClick={() => navigate(-1)}
             className="product-card-back"
-            style={{ display: "flex", alignItems: "center", gap: "6px", marginBottom: "1rem" }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+              marginBottom: "1rem",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+            }}
           >
-            <span style={{ fontSize: "20px" }}>⬅</span>
-            <p>Back</p>
-          </a>
+            {/* SVG стрелка */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="icon"
+            >
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+            <span className="back-text">Назад</span>
+          </button>
 
           <div className="product-card-title" style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "1rem" }}>
             {product.name}
@@ -210,6 +228,15 @@ function ProductPage() {
           </button>
         </div>
       </div>
+
+      {/* Мини адаптив (можно вынести в CSS) */}
+      <style>{`
+        @media (max-width: 768px) {
+          .back-text {
+            display: none;
+          }
+        }
+      `}</style>
     </section>
   );
 }
