@@ -175,9 +175,7 @@ function Home() {
         <div className="footer-content">
           <h3 className="logo-text">qaraa kz</h3>
           <div className="addition">
-            <a href="/dostavka" target="_blank" rel="noreferrer">
-              Доставка
-            </a>
+          <Link to="/dostavka">Доставка</Link>
             <a href="/vozvrat" target="_blank" rel="noreferrer">
               Условия возврата товара
             </a>
