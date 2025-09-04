@@ -13,6 +13,11 @@ import "../css/sign-up.css";
 import qaraaLogo from "../images/qaraa.png";
 import exampleImg from "../images/qaraa.png";
 import rectangleImg from "../images/rectangle.svg";
+import bazafutbolka from "../images/bazafutbolka.png";
+import nikeforce from "../images/nikeairforce.png";
+import nikeairjordan from "../images/nikeairjordan.png";
+import futbolkaami from "../images/futbolkaami.png";
+import diorbraclet from "../images/diorbraclet.png";
 
 function Home() {
   const footerRef = useRef(null);
@@ -174,12 +179,11 @@ function Home() {
 
           <div className="new">
             <div className="new-grid">
-              <a href="#">
+              {/* <a href="#">
                 <img src={exampleImg} alt="sakura-img" className="new-img" />
-              </a>
+              </a> */}
             </div>
             <div className="new-text-one" style={{ color: "black" }}>
-              test test
             </div>
           </div>
 
@@ -202,9 +206,33 @@ function Home() {
         <section className="shop-container" ref={shopRef}>
           <div className="section-title">
             <div className="shop-content">
+            <a className="product-box" href="#">
+                <img src={rectangleImg} alt="" className="rectangle" />
+                <img src={futbolkaami} alt="product" className="product-img" />
+                <div className="product-title">На разработке сорри</div>
+                <div className="product-price">1999 тг.</div>
+              </a>
               <a className="product-box" href="#">
                 <img src={rectangleImg} alt="" className="rectangle" />
-                <img src={exampleImg} alt="product" className="product-img" />
+                <img src={bazafutbolka} alt="product" className="product-img" />
+                <div className="product-title">На разработке сорри</div>
+                <div className="product-price">1999 тг.</div>
+              </a>
+              <a className="product-box" href="#">
+                <img src={rectangleImg} alt="" className="rectangle" />
+                <img src={nikeforce} alt="product" className="product-img" />
+                <div className="product-title">На разработке сорри</div>
+                <div className="product-price">1999 тг.</div>
+              </a>
+              <a className="product-box" href="#">
+                <img src={rectangleImg} alt="" className="rectangle" />
+                <img src={nikeairjordan} alt="product" className="product-img" />
+                <div className="product-title">На разработке сорри</div>
+                <div className="product-price">1999 тг.</div>
+              </a>
+              <a className="product-box" href="#">
+                <img src={rectangleImg} alt="" className="rectangle" />
+                <img src={diorbraclet} alt="product" className="product-img" />
                 <div className="product-title">На разработке сорри</div>
                 <div className="product-price">1999 тг.</div>
               </a>
