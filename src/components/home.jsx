@@ -336,12 +336,8 @@ function Home() {
           <h3 className="logo-text">qaraa kz</h3>
           <div className="addition">
             <Link to="/dostavka">Доставка</Link>
-            <a href="/vozvrat" target="_blank" rel="noreferrer">
-              Условия возврата товара
-            </a>
-            <a href="/politika" target="_blank" rel="noreferrer">
-              Политика конфиденциальности
-            </a>
+            <Link to="/onas">О нас</Link>
+            <Link to="/otziv">Отзывы</Link>
           </div>
           <ul className="socials">
             <li>
