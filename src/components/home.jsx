@@ -226,10 +226,10 @@ function Home() {
               <Link className="product-box" to="/product/futbolkaami">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={futbolkaami} alt="product" className="product-img" />
-                <div className="product-title">Футболка Ami</div>
+                <div className="product-title">Футболка AMI Paris</div>
                 <div className="product-prices">
-                  <span className="product-price-new">1.999 тг.</span>
-                  <span className="product-price-old">2999 тг.</span>
+                  <span className="product-price-new">4.990 тг.</span>
+                  <span className="product-price-old">7000 тг.</span>
                 </div>
               </Link>
               <Link className="product-box" to="/product/bazafutbolka">

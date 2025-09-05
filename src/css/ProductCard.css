@@ -14,14 +14,14 @@
   /* Для телефонов */
   @media (max-width: 768px) {
     .product-card-back {
-      left: -35px;
+      left: -22px;
     }
   }
   
   /* Для ПК */
   @media (min-width: 769px) {
     .product-card-back {
-      left: -200px;
+      left: -130px;
     }
   }
 
