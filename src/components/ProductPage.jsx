@@ -20,9 +20,9 @@ import diorbraclet from "../images/diorbraclet.png";
 const products = {
   poloswiter: {
     id: "poloswiter",
-    name: "Polo Свитер",
-    price_new: "1999",
-    price_old: "2999",
+    name: "Polo Ralph Lauren свитер",
+    price_new: "9.990",
+    price_old: "15000",
     description: "Удобная футболка из хлопка. Отлично подходит для повседневной носки.",
     images: [poloswiter],
     sizes: ["S", "M", "L", "XL"],
@@ -232,27 +232,29 @@ function ProductPage() {
           </div>
 
           <button
-            className="product-card-buy"
-            style={{
-              marginTop: "1.5rem",
-              padding: "12px 20px",
-              background: "#333",
-              color: "#fff",
-              border: "none",
-              borderRadius: "6px",
-              cursor: "pointer",
-              fontSize: "1rem",
-            }}
-            onClick={() => {
-              if (!selectedSize) {
-                alert("Выберите размер!");
-                return;
-              }
-              alert(`Добавлено в корзину: ${product.name}, размер ${selectedSize}`);
-            }}
-          >
-            ДОБАВИТЬ В КОРЗИНУ
-          </button>
+  className="product-card-buy"
+  style={{
+    marginTop: "1.5rem",
+    padding: "12px 20px",
+    background: "#333",
+    color: "#fff",
+    border: "none",
+    borderRadius: "6px",
+    cursor: "pointer",
+    fontSize: "1rem",
+  }}
+  onClick={() => {
+    if (!selectedSize) {
+      alert("Выберите размер!");
+      return;
+    }
+    const message = `Здравствуйте! Хочу заказать: ${product.name}, размер ${selectedSize}`;
+    const url = `https://wa.me/77078307588?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  }}
+>
+  ЗАКАЗАТЬ
+</button>
         </div>
       </div>
     </section>

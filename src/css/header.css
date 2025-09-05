@@ -426,3 +426,32 @@ nav a:hover {
         width: 700px;
     }    
 }
+
+.product-prices {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .product-price-new {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #d1001c; /* красный цвет для скидочной цены */
+  }
+  
+  .product-price-old {
+    font-size: 0.9rem;
+    color: #777;
+    text-decoration: line-through;
+  }
+
+  .product-price,
+.product-prices {
+  display: flex;
+  justify-content: center; /* по центру по горизонтали */
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  text-align: center;
+}

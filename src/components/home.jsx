@@ -62,7 +62,6 @@ function Home() {
       <header className="header">
         <div className="left-section">
           <div className="mobile-toggle">
-            <i className="bx bx-menu bx-tada-hover"></i>
           </div>
           <div className="logo">
             <Link to="/">
@@ -134,11 +133,6 @@ function Home() {
           </Link>
         </div>
         <div className="right-section">
-          <div className="cart-icon">
-            <i className="bx bx-shopping-bag bx-tada-hover">
-              <div className="cart-number"></div>
-            </i>
-          </div>
           <div className="whole-cart-window">
             <div className="cart">
               <h2 className="cart-title">YOUR CART</h2>
@@ -223,44 +217,65 @@ function Home() {
               <Link className="product-box" to="/product/poloswiter">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={poloswiter} alt="product" className="product-img" />
-                <div className="product-title">Polo Свитер</div>
-                <div className="product-price">1999 тг.</div>
+                <div className="product-title">Polo Ralph Lauren свитер</div>
+                <div className="product-prices">
+                  <span className="product-price-new">9.990 тг.</span>
+                  <span className="product-price-old">15000 тг.</span>
+                </div>
               </Link>
               <Link className="product-box" to="/product/futbolkaami">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={futbolkaami} alt="product" className="product-img" />
                 <div className="product-title">Футболка Ami</div>
-                <div className="product-price">1999 тг.</div>
+                <div className="product-prices">
+                  <span className="product-price-new">1.999 тг.</span>
+                  <span className="product-price-old">2999 тг.</span>
+                </div>
               </Link>
               <Link className="product-box" to="/product/bazafutbolka">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={bazafutbolka} alt="product" className="product-img" />
-                <div className="product-title">База футболка</div>
-                <div className="product-price">1999 тг.</div>
+                <div className="product-title">База Футболка</div>
+                <div className="product-prices">
+                  <span className="product-price-new">3.490 тг.</span>
+                  <span className="product-price-old">5000 тг.</span>
+                </div>
               </Link>
               <Link className="product-box" to="/product/svtriko">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={svtriko} alt="product" className="product-img" />
-                <div className="product-title">SV</div>
-                <div className="product-price">1999 тг.</div>
+                <div className="product-title">SUVENE спортивные брюки</div>
+                <div className="product-prices">
+                  <span className="product-price-new">9.990 тг.</span>
+                  <span className="product-price-old">17000 тг.</span>
+                </div>
               </Link>
               <Link className="product-box" to="/product/nikeforce">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={nikeforce} alt="product" className="product-img" />
                 <div className="product-title">Nike Air Force</div>
-                <div className="product-price">1999 тг.</div>
+                <div className="product-prices">
+                  <span className="product-price-new">7.990 тг.</span>
+                  <span className="product-price-old">20000 тг.</span>
+                </div>
               </Link>
               <Link className="product-box" to="/product/nikeairjordan">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={nikeairjordan} alt="product" className="product-img" />
                 <div className="product-title">Nike Air Jordan</div>
-                <div className="product-price">1999 тг.</div>
+                <div className="product-prices">
+                  <span className="product-price-new">7.990 тг.</span>
+                  <span className="product-price-old">20000 тг.</span>
+                </div>
               </Link>
               <Link className="product-box" to="/product/diorbraclet">
                 <img src={rectangleImg} alt="" className="rectangle" />
                 <img src={diorbraclet} alt="product" className="product-img" />
                 <div className="product-title">Dior Браслет</div>
-                <div className="product-price">1999 тг.</div>
+                <div className="product-prices">
+                  <span className="product-price-new">2.990 тг.</span>
+                  <span className="product-price-old">5000 тг.</span>
+                </div>
               </Link>
             </div>
           </div>
