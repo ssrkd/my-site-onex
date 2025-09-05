@@ -23,7 +23,7 @@ const products = {
     name: "Polo Ralph Lauren свитер",
     price_new: "9.990",
     price_old: "15000",
-    description: "Удобная футболка из хлопка. Отлично подходит для повседневной носки.",
+    description: "Тёмно-синий свитер Polo Ralph Lauren с вышитым флагом США. Выполнен из мягкого хлопка, комфортный и стильный вариант для прохладной погоды. Подходит как для повседневной носки, так и для особых случаев.",
     images: [poloswiter],
     sizes: ["S", "M", "L", "XL"],
   },
@@ -249,7 +249,7 @@ function ProductPage() {
       return;
     }
     const message = `Здравствуйте! Хочу заказать: ${product.name}, размер ${selectedSize}`;
-    const url = `https://wa.me/77078307588?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/77778307588?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   }}
 >
