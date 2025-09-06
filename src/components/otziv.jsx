@@ -181,9 +181,9 @@ const Otzyvy = () => {
       {/* HEADER */}
       <header className="header">
         <div className="left-section">
-          <div className="mobile-toggle">
+          {/* <div className="mobile-toggle">
             <i className="bx bx-menu bx-tada-hover"></i>
-          </div>
+          </div> */}
           <div className="logo">
             <Link to="/">
               <img src={qaraaLogo} alt="Logo" className="logo" />
